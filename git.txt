@@ -33,5 +33,5 @@ hinzufügen. Jetzt bist du bereit, deine Änderungen hochzuladen
 >>
 git add .
 git commit -m "Commit-Nachricht"
-git push origin master
+git push
 <<
