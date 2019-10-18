@@ -14,7 +14,7 @@ Falls du ein entferntes Repository verwendest, benutze:
 ** add & commit **
 Du kannst Änderungen vorschlagen (zum Index hinzufügen) mit
 >> 	git add <dateiname>
->> 	git add *
+>> 	git add .
 Das ist der erste Schritt im git workflow, du bestätigst deine Änderungen mit:
 >>	git commit -m "Commit-Nachricht"
 Jetzt befindet sich die Änderung im HEAD, aber noch nicht im entfernten Repository.
@@ -31,7 +31,7 @@ hinzufügen. Jetzt bist du bereit, deine Änderungen hochzuladen
 
 ** Zusammenfassung bei Änderungen **
 >>
-git add *
+git add .
 git commit -m "Commit-Nachricht"
 git push origin master
 <<
