@@ -1,0 +1,37 @@
+** Neues Repository erstellen **
+erstelle ein neues Verzeichnis, öffne es und führe
+>>	git init
+aus, um ein neues git-Repository anzulegen.
+
+
+** Ein Repository auschecken **
+erstelle eine Arbeitskopie, indem du folgenden Befehl ausführst:
+>>	git clone /pfad/zum/repository
+Falls du ein entferntes Repository verwendest, benutze:
+>>	git clone benutzername@host:/pfad/zum/repository
+
+
+** add & commit **
+Du kannst Änderungen vorschlagen (zum Index hinzufügen) mit
+>> 	git add <dateiname>
+>> 	git add *
+Das ist der erste Schritt im git workflow, du bestätigst deine Änderungen mit:
+>>	git commit -m "Commit-Nachricht"
+Jetzt befindet sich die Änderung im HEAD, aber noch nicht im entfernten Repository.
+
+
+** Änderungen hochladen **
+Die Änderungen sind jetzt im HEAD deines lokalen Repositories. Um die Änderungen an dein entferntes Repository zu senden, führe:
+>>	git push origin master
+aus. Du kannst master auch mit einem beliebigen anderen Branch ersetzen, mehr über Branches erfährst du später.
+
+Wenn du dein lokales Repository nicht von einem entfernten geklont hast und du diese aber mit einem anderen Repository verbinden möchtest, musst du dieses mit
+>>	git remote add origin <server>
+hinzufügen. Jetzt bist du bereit, deine Änderungen hochzuladen
+
+** Zusammenfassung bei Änderungen **
+>>
+git add *
+git commit -m "Commit-Nachricht"
+git push origin master
+<<
