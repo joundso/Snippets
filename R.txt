@@ -1,4 +1,4 @@
->> Tabellen in data tables ablegen <<
+i>> Tabellen in data tables ablegen <<
 data.table
 ----------------------------------------------------
 >> Teildatensatz aus Tabelle <<
@@ -20,9 +20,19 @@ knn_model <- CoreModel(weight ~ heigth, model="knn")
 
 > Bayes:
 bayes_model <- CoreModel(weight ~ heigth, model="bayes")
-----------------------------------------------------
->> Überschrift <<
+bayes_model2 <- NaiveBayes(weight ~ .)
 
+> Simple neural networks
+nnet.model <- nnet(weight ~ ., size=10)
+----------------------------------------------------
+>> Zeit messen <<
+# Start the clock!
+ptm <- proc.time()
+
+# Do stuff here
+
+# Stop the clock
+proc.time() - ptm
 ----------------------------------------------------
 >> Überschrift <<
 
