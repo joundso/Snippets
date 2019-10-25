@@ -1,4 +1,4 @@
-i>> Tabellen in data tables ablegen <<
+>> Tabellen in data tables ablegen <<
 data.table
 ----------------------------------------------------
 >> Teildatensatz aus Tabelle <<
