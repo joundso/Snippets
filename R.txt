@@ -1,2 +1,42 @@
-Tabellen in data tables ablegen:
+>> Tabellen in data tables ablegen <<
 data.table
+----------------------------------------------------
+>> Teildatensatz aus Tabelle <<
+subset(daten, age < 25, select = SpalteVon:SpalteBis)
+ODER:
+spalten <- c("u", "lot2")
+testdata[testdata$lot1 < 40, spalten]
+----------------------------------------------------
+>> Regression, Machine-Learning <<
+> Linear (s. VL 3):
+linear_model <- lm(weight ~ height)
+
+> Random Forests (s. VL 5)
+rf_model <- randomForest(weight ~ height)
+rf_model2 <- CoreModel(weight ~ heigth, model="rf")
+
+> k-nearest Neighbors:
+knn_model <- CoreModel(weight ~ heigth, model="knn")
+
+> Bayes:
+bayes_model <- CoreModel(weight ~ heigth, model="bayes")
+----------------------------------------------------
+>> Überschrift <<
+
+----------------------------------------------------
+>> Überschrift <<
+
+----------------------------------------------------
+>> Überschrift <<
+
+----------------------------------------------------
+>> Überschrift <<
+
+----------------------------------------------------
+>> Überschrift <<
+
+----------------------------------------------------
+>> Überschrift <<
+
+----------------------------------------------------
+>> Überschrift <<
