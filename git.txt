@@ -35,3 +35,7 @@ git add .
 git commit -m "Commit-Nachricht"
 git push
 <<
+
+** Discharge local changes and pull and overwrite things from git **
+git checkout filename.xyz
+git pull
