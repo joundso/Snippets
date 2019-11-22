@@ -34,8 +34,8 @@ ptm <- proc.time()
 # Stop the clock
 proc.time() - ptm
 ----------------------------------------------------
->> Überschrift <<
-
+>> Install "pdflatex" <<
+tinytex::install_tinytex(force = T)
 ----------------------------------------------------
 >> Überschrift <<
 

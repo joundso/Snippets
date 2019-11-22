@@ -39,3 +39,10 @@ git push
 ** Discharge local changes and pull and overwrite things from git **
 git checkout filename.xyz
 git pull
+
+** Merge branch y into branch x **
+
+
+** Change username and EMail **
+git config user.name ""
+git config user.email "@"
