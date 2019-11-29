@@ -32,3 +32,13 @@ docker ps -a
 # get info about docker 
 docker info
 
+# The docker system prune command will remove all stopped containers, all dangling images, and all unused networks:
+docker system prune
+
+# Remove docker container:
+docker container ls -a
+docker container rm ID1 ID2
+
+# Remove docker images:
+docker image ls
+docker image rm ID1 ID2

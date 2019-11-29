@@ -1,48 +1,44 @@
-** Neues Repository erstellen **
-erstelle ein neues Verzeichnis, öffne es und führe
->>	git init
-aus, um ein neues git-Repository anzulegen.
+** New repo **
+git init
 
 
-** Ein Repository auschecken **
-erstelle eine Arbeitskopie, indem du folgenden Befehl ausführst:
->>	git clone /pfad/zum/repository
-Falls du ein entferntes Repository verwendest, benutze:
->>	git clone benutzername@host:/pfad/zum/repository
+** Add/clone new repo **
+git clone /path/to/repository
+* or *
+git clone benutzername@host:/path/to/repository
 
 
 ** add & commit **
-Du kannst Änderungen vorschlagen (zum Index hinzufügen) mit
->> 	git add <dateiname>
->> 	git add .
-Das ist der erste Schritt im git workflow, du bestätigst deine Änderungen mit:
->>	git commit -m "Commit-Nachricht"
-Jetzt befindet sich die Änderung im HEAD, aber noch nicht im entfernten Repository.
-
-
-** Änderungen hochladen **
-Die Änderungen sind jetzt im HEAD deines lokalen Repositories. Um die Änderungen an dein entferntes Repository zu senden, führe:
->>	git push origin master
-aus. Du kannst master auch mit einem beliebigen anderen Branch ersetzen, mehr über Branches erfährst du später.
-
-Wenn du dein lokales Repository nicht von einem entfernten geklont hast und du diese aber mit einem anderen Repository verbinden möchtest, musst du dieses mit
->>	git remote add origin <server>
-hinzufügen. Jetzt bist du bereit, deine Änderungen hochzuladen
-
-** Zusammenfassung bei Änderungen **
->>
+Add changes to staging area
+git add <dateiname>
+* or *
 git add .
-git commit -m "Commit-Nachricht"
-git push
-<<
+* then put to git HEAD *
+git commit -m "Commit-Message"
+
+
+** Upload Changes **
+git push origin branch_name
+
+
+** Connect your new local repo with existing online-repo **
+git remote add origin <server>
+
 
 ** Discharge local changes and pull and overwrite things from git **
 git checkout filename.xyz
 git pull
 
-** Merge branch y into branch x **
+
+** Switch off gpg signing: **
+git config commit.gpgsign false
 
 
 ** Change username and EMail **
 git config user.name ""
 git config user.email "@"
+
+
+** Add new branch **
+git checkout -b name_of_new_branch
+git push origin name_of_new_branch
