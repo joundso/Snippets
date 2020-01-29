@@ -41,4 +41,7 @@ docker container rm ID1 ID2
 
 # Remove docker images:
 docker image ls
-docker image rm ID1 ID2
+docker image rmi ID1 ID2
+
+# Remove stopped containers:
+docker rm `docker ps --no-trunc -aq`

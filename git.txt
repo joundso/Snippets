@@ -42,3 +42,29 @@ git config user.email "@"
 ** Add new branch **
 git checkout -b name_of_new_branch
 git push origin name_of_new_branch
+
+** New tag **
+
+# add commit push  new stuff (development)
+
+# delete local tag
+git tag -d v0.0.6
+
+# push deleted tag
+git push -d origin v0.0.6
+
+# new local tag 
+git tag -a v0.0.6 -m "release v0.0.6"
+
+# push local tag
+git push origin v0.0.6
+
+# checktout all branches and merge and push
+
+git checkout master
+git merge development
+git push
+
+git checkout latest
+git merge master
+git push origin latest
