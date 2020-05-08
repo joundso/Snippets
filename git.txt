@@ -29,9 +29,12 @@ git remote add origin <server>
 git checkout filename.xyz
 git pull
 
+** Discharge local branch and reset to remote head **
+git fetch origin
+git reset --hard origin/master
 
 ** Switch off gpg signing: **
-git config commit.gpgsign false
+git config --global commit.gpgsign false
 
 
 ** Change username and EMail **
@@ -59,8 +62,7 @@ git tag -a v0.0.6 -m "release v0.0.6"
 # push local tag
 git push origin v0.0.6
 
-# checktout all branches and merge and push
-
+# checkout all branches and merge and push
 git checkout master
 git merge development
 git push
@@ -68,3 +70,9 @@ git push
 git checkout latest
 git merge master
 git push origin latest
+
+
+# Archive branch
+git tag archive/<branchname> <branchname>
+git branch -d <branchname>
+git checkout master

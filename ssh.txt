@@ -1,0 +1,2 @@
+## SSH mit Pfad zur Config starten
+ssh -i /drive/path/file user@server
