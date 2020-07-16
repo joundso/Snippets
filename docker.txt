@@ -45,3 +45,6 @@ docker image rmi ID1 ID2
 
 # Remove stopped containers:
 docker rm `docker ps --no-trunc -aq`
+
+# Tag built image:
+docker build -t "url-to-redcap:v0.0.2" .

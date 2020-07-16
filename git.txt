@@ -76,3 +76,6 @@ git push origin latest
 git tag archive/<branchname> <branchname>
 git branch -d <branchname>
 git checkout master
+
+# New repo-url:
+git remote set-url origin https://git.company.com/path/to/your-project.git

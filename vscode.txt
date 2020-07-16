@@ -1,0 +1,8 @@
+# List all installed Plugins:
+# https://stackoverflow.com/questions/35773299/how-can-you-export-the-visual-studio-code-extension-list
+code --list-extensions | xargs -L 1 echo code --install-extension
+
+# Extensions are located here:
+# Windows %USERPROFILE%\.vscode\extensions
+# Mac ~/.vscode/extensions
+# Linux ~/.vscode/extensions
