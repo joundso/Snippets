@@ -34,6 +34,28 @@ gch() {
     git checkout $1
 }
 
-if [ -f ~/.custom_aliases ]; then
-        . ~/.custom_aliases
-fi
+
+## Version Control
+alias gs="git status"
+alias ga="git add ."
+# alias gc --> see file "~/.bashrc" ## git commit
+alias gp="git push origin HEAD"
+# alias gacp --> see file "~/.bashrc"
+alias gpa="git pull --all"
+
+
+## Docker
+alias dpa="docker ps -a"
+
+## Directory
+alias diskusage="df -h"
+alias folderusage="du -ch"
+alias totalfolderusage="du -sh"
+alias c="cd .."
+alias la="ls -al"
+
+
+## Various
+alias opencustomaliases="code  ~/.custom_aliases"
+alias updatecustomaliases="source ~/.bashrc"
+alias updatethenupgrade="sudo apt-get update && sudo apt-get upgrade"

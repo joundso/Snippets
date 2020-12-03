@@ -22,6 +22,7 @@ git push origin branch_name
 
 
 ** Connect your new local repo with existing online-repo **
+git init
 git remote add origin <server>
 
 
@@ -45,6 +46,10 @@ git config user.email "@"
 ** Add new branch **
 git checkout -b name_of_new_branch
 git push origin name_of_new_branch
+
+## Clone specific branch only
+git clone --single-branch --branch <branchname> <remote-repo>
+
 
 ** New tag **
 
