@@ -82,5 +82,8 @@ git tag archive/<branchname> <branchname>
 git branch -d <branchname>
 git checkout master
 
+## Get current repo url:
+git remote get-url --all origin
+
 # New repo-url:
 git remote set-url origin https://git.company.com/path/to/your-project.git
