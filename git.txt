@@ -87,3 +87,8 @@ git remote get-url --all origin
 
 # New repo-url:
 git remote set-url origin https://git.company.com/path/to/your-project.git
+
+# Sync local tags with remote:
+git tag
+git fetch --prune-tags
+git tag
