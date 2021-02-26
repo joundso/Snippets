@@ -15,7 +15,7 @@ gt() {
 }
 
 # Git remove tag
-gt_del() {
+gtr() {
     git status
     # delete local tag
     git tag -d v$1

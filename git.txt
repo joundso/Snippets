@@ -88,7 +88,13 @@ git remote get-url --all origin
 # New repo-url:
 git remote set-url origin https://git.company.com/path/to/your-project.git
 
-# Sync local tags with remote:
+# Sync local tags with remote (this overwrites local tags):
 git tag
-git fetch --prune-tags
+git fetch --prune-tags -f
 git tag
+
+## Solve '(push declined due to email privacy restrictions)' error:
+## Due to <https://stackoverflow.com/a/44099011/13890903>
+git config user.email {ID}+{username}@users.noreply.github.com
+git commit --amend --reset-author
+git push
