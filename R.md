@@ -11,6 +11,7 @@
     - [Simple neural networks](#simple-neural-networks)
   - [Measure time](#measure-time)
   - [Install TeX](#install-tex)
+  - [Clean the R environment, console and history](#clean-the-r-environment-console-and-history)
 
 ## General
 
@@ -83,4 +84,15 @@ proc.time() - ptm
 
 ```R
 tinytex::install_tinytex(force = T)
+```
+
+## Clean the R environment, console and history
+
+```R
+# Cleanup the backend in RStudio:
+cat("\014") # Clears the console (imitates CTR + L)
+rm(list = ls()) # Clears the Global Environment/variables/data
+invisible(gc()) # Garbage collector/Clear unused RAM
+# Start coding now:
+print("Hello world! =)")
 ```
