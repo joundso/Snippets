@@ -14,7 +14,7 @@ Some basic hints in the beginning:
 subset(data, age < 25, select = 1:10)
 ```
 
-Or (sing `data.table`):
+Or (using `data.table`):
 
 ```R
 cols <- c("colname1", "colname2")

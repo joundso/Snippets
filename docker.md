@@ -148,3 +148,11 @@ wsl --export docker-desktop-data "K:\Docker\docker-desktop-data.tar"
 wsl --unregister docker-desktop-data
 wsl --import docker-desktop-data "K:\Docker" "K:\Docker\docker-desktop-data.tar" --version 2
 ```
+
+## Access docker image
+
+```bash
+docker run -it IMAGENAME /bin/bash
+
+## Try //bin//bash if the upper command doesn't work.
+```
