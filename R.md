@@ -1,5 +1,17 @@
 # R Snippets
 
+- [R Snippets](#r-snippets)
+  - [General](#general)
+  - [Select a subset of a table](#select-a-subset-of-a-table)
+  - [Regression, Machine-Learning](#regression-machine-learning)
+    - [Linear](#linear)
+    - [Random Forests](#random-forests)
+    - [k-nearest Neighbors](#k-nearest-neighbors)
+    - [Bayes](#bayes)
+    - [Simple neural networks](#simple-neural-networks)
+  - [Measure time](#measure-time)
+  - [Install TeX](#install-tex)
+
 ## General
 
 Some basic hints in the beginning:

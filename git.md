@@ -1,5 +1,23 @@
 # Git snippets
 
+- [Git snippets](#git-snippets)
+  - [Create a new repo](#create-a-new-repo)
+  - [Clone new repo](#clone-new-repo)
+  - [Add & commit local files to remote repo](#add--commit-local-files-to-remote-repo)
+  - [Connect your (new) local repo with existing online-repo](#connect-your-new-local-repo-with-existing-online-repo)
+  - [Discharge local changes and pull and overwrite things from git](#discharge-local-changes-and-pull-and-overwrite-things-from-git)
+  - [Discharge local branch and reset to remote head](#discharge-local-branch-and-reset-to-remote-head)
+  - [Switch off gpg signing](#switch-off-gpg-signing)
+  - [Change Username and E-Mail](#change-username-and-e-mail)
+  - [Add new branch](#add-new-branch)
+  - [Clone a specific branch only](#clone-a-specific-branch-only)
+  - [New tag](#new-tag)
+  - [Archive a branch](#archive-a-branch)
+  - [Get current repo url](#get-current-repo-url)
+  - [New repo-url to existing local repo](#new-repo-url-to-existing-local-repo)
+  - [Sync local tags with remote (this overwrites local tags)](#sync-local-tags-with-remote-this-overwrites-local-tags)
+  - [Solve `push declined due to email privacy restrictions` error](#solve-push-declined-due-to-email-privacy-restrictions-error)
+
 ## Create a new repo
 
 ```bash

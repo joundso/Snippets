@@ -1,5 +1,9 @@
 # Shell Snippets
 
+- [Shell Snippets](#shell-snippets)
+  - [Nano: Mark all](#nano-mark-all)
+  - [SSH: Connect with path to keyfile](#ssh-connect-with-path-to-keyfile)
+
 ## Nano: Mark all
 
 1. Place the cursor at the beginning of the file

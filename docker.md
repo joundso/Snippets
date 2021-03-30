@@ -1,5 +1,26 @@
 # Docker Snippets
 
+- [Docker Snippets](#docker-snippets)
+  - [Changing rights inside a container](#changing-rights-inside-a-container)
+  - [Build a dockerfile](#build-a-dockerfile)
+  - [Push an image to a hub/harbor](#push-an-image-to-a-hubharbor)
+  - [Docker run](#docker-run)
+  - [Docker-compose options](#docker-compose-options)
+    - [Run container](#run-container)
+    - [Stop container (but keep changes within container)](#stop-container-but-keep-changes-within-container)
+  - [Reset container (and reset changes within the container)](#reset-container-and-reset-changes-within-the-container)
+  - [Delete unused images](#delete-unused-images)
+  - [Delete exited containers](#delete-exited-containers)
+  - [Get infos about container status](#get-infos-about-container-status)
+  - [Get info about docker](#get-info-about-docker)
+  - [Clean the cache](#clean-the-cache)
+  - [Remove docker container](#remove-docker-container)
+  - [Remove docker images](#remove-docker-images)
+  - [Remove stopped containers](#remove-stopped-containers)
+  - [Tag a already built image](#tag-a-already-built-image)
+  - [Change docker path under WSL2 (PowerShell)](#change-docker-path-under-wsl2-powershell)
+  - [Access docker image](#access-docker-image)
+
 ## Changing rights inside a container
 
 1. Access the container by using

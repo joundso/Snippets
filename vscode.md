@@ -1,5 +1,9 @@
 # Snippets for Visual Studio Code
 
+- [Snippets for Visual Studio Code](#snippets-for-visual-studio-code)
+  - [List all installed Plugins](#list-all-installed-plugins)
+  - [Extensions are located here](#extensions-are-located-here)
+
 ## List all installed Plugins
 
 See [here](https://stackoverflow.com/questions/35773299/how-can-you-export-the-visual-studio-code-extension-list) for further information.
