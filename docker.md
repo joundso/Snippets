@@ -19,7 +19,7 @@
   - [Remove stopped containers](#remove-stopped-containers)
   - [Tag a already built image](#tag-a-already-built-image)
   - [Change docker path under WSL2 (PowerShell)](#change-docker-path-under-wsl2-powershell)
-  - [Access docker image](#access-docker-image)
+  - [Access an docker image with a bash inside](#access-an-docker-image-with-a-bash-inside)
 
 ## Changing rights inside a container
 
@@ -170,7 +170,7 @@ wsl --unregister docker-desktop-data
 wsl --import docker-desktop-data "K:\Docker" "K:\Docker\docker-desktop-data.tar" --version 2
 ```
 
-## Access docker image
+## Access an docker image with a bash inside
 
 ```bash
 docker run -it IMAGENAME /bin/bash
