@@ -13,9 +13,9 @@ Feel free to comment or create Merge-Requests to keep this collection up to date
 
 ## Current functions for GitLab
 
-- [Remove CI/CD-Pipelines](gitlab/gitlab_remove_pipeline.py)
+- [Remove CI/CD-Pipelines](Gitlab/gitlab_remove_pipeline.py)
 
-## Current Functions for R
+## Current functions for R
 
 - [Boxplot with own calculations for mean, median, min, max, etc.](R/boxplot_with_own_calculations.R)
 - [Find duplicates in an array/vector](R/find_duplicates.R)
