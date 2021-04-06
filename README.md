@@ -1,6 +1,6 @@
 # Snippets
 
-This is my personal summary of function, snippets and other stuff I often need but most of the time don't remember.
+This is my personal summary of functions, snippets and other stuff I often need but most of the time don't remember.
 Feel free to comment or create Merge-Requests to keep this collection up to date and useful.
 
 ## Current Snippets
