@@ -12,6 +12,8 @@
   - [Measure time](#measure-time)
   - [Install TeX](#install-tex)
   - [Clean the R environment, console and history](#clean-the-r-environment-console-and-history)
+  - [`data.table` specific stuff](#datatable-specific-stuff)
+    - [Change the type of multiple columns](#change-the-type-of-multiple-columns)
 
 ## General
 
@@ -96,3 +98,30 @@ invisible(gc()) # Garbage collector/Clear unused RAM
 # Start coding now:
 print("Hello world! =)")
 ```
+
+## `data.table` specific stuff
+
+### Change the type of multiple columns
+
+```R
+data <- data.table::data.table(a = 1:1e5,
+                               b = sample(x = LETTERS, size = 1e5, replace = TRUE))
+
+test_set <- function(data, colnames) {
+  for (col in colnames) {
+    data.table::set(x = data,
+                    j = col,
+                    value = as.character(data[[col]]))
+  }
+  return(data)
+}
+
+test_lapply <- function(data, colnames) {
+  return(data[, lapply(.SD, as.character), .SDcols = colnames])
+}
+
+microbenchmark::microbenchmark(test_set(data = data, colnames = c("a", "b")),
+                               test_lapply(data = data, colnames = c("a", "b")))
+```
+
+In short: I often use `dt <- dt[, lapply(.SD, as.character), .SDcols = c("colname1", "colname2")]`.
