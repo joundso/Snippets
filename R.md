@@ -14,6 +14,7 @@
   - [Clean the R environment, console and history](#clean-the-r-environment-console-and-history)
   - [`data.table` specific stuff](#datatable-specific-stuff)
     - [Change the type of multiple columns](#change-the-type-of-multiple-columns)
+  - [Copy a `data.table`s structure without its content](#copy-a-datatables-structure-without-its-content)
 
 ## General
 
@@ -125,3 +126,14 @@ microbenchmark::microbenchmark(test_set(data = data, colnames = c("a", "b")),
 ```
 
 In short: I often use `dt <- dt[, lapply(.SD, as.character), .SDcols = c("colname1", "colname2")]`.
+
+## Copy a `data.table`s structure without its content
+
+```R
+data <- data.table::data.table(a = 1:10,
+                               b = sample(x = LETTERS, size = 10, replace = TRUE))
+
+data_structure <- data[0, ]
+# > data_structure
+# Empty data.table (0 rows and 2 cols): a,b
+```
