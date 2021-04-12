@@ -17,7 +17,7 @@
   - [Remove docker container](#remove-docker-container)
   - [Remove docker images](#remove-docker-images)
   - [Remove stopped containers](#remove-stopped-containers)
-  - [Tag a already built image](#tag-a-already-built-image)
+  - [Tag an already built image](#tag-an-already-built-image)
   - [Change docker path under WSL2 (PowerShell)](#change-docker-path-under-wsl2-powershell)
   - [Access an docker image with a bash inside](#access-an-docker-image-with-a-bash-inside)
 
@@ -152,7 +152,7 @@ docker image rmi ID1 ID2
 docker rm `docker ps --no-trunc -aq`
 ```
 
-## Tag a already built image
+## Tag an already built image
 
 ```bash
 docker build -t "imageNAME:imageTAG" .
