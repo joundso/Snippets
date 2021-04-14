@@ -12,9 +12,10 @@
   - [Measure time](#measure-time)
   - [Install TeX](#install-tex)
   - [Clean the R environment, console and history](#clean-the-r-environment-console-and-history)
+  - [Determine elements existing in two or more vectors](#determine-elements-existing-in-two-or-more-vectors)
   - [`data.table` specific stuff](#datatable-specific-stuff)
     - [Change the type of multiple columns](#change-the-type-of-multiple-columns)
-  - [Copy a `data.table`s structure without its content](#copy-a-datatables-structure-without-its-content)
+    - [Copy a `data.table`s structure without its content](#copy-a-datatables-structure-without-its-content)
 
 ## General
 
@@ -100,6 +101,18 @@ invisible(gc()) # Garbage collector/Clear unused RAM
 print("Hello world! =)")
 ```
 
+## Determine elements existing in two or more vectors
+
+```R
+v1 <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3)
+v2 <- c(2, 3, 4, 2, 3)
+v3 <- c(1, 1, 1, 2, 2, 2, 9, 4)
+
+Reduce(intersect, list(v1, v2, v3))
+## Result:
+# [1] 2 4
+```
+
 ## `data.table` specific stuff
 
 ### Change the type of multiple columns
@@ -127,7 +140,7 @@ microbenchmark::microbenchmark(test_set(data = data, colnames = c("a", "b")),
 
 In short: I often use `dt <- dt[, lapply(.SD, as.character), .SDcols = c("colname1", "colname2")]`.
 
-## Copy a `data.table`s structure without its content
+### Copy a `data.table`s structure without its content
 
 ```R
 data <- data.table::data.table(a = 1:10,
