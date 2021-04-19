@@ -16,6 +16,7 @@
   - [`data.table` specific stuff](#datatable-specific-stuff)
     - [Change the type of multiple columns](#change-the-type-of-multiple-columns)
     - [Copy a `data.table`s structure without its content](#copy-a-datatables-structure-without-its-content)
+    - [Search and replace in all cells in a `data.table`](#search-and-replace-in-all-cells-in-a-datatable)
 
 ## General
 
@@ -149,4 +150,46 @@ data <- data.table::data.table(a = 1:10,
 data_structure <- data[0, ]
 # > data_structure
 # Empty data.table (0 rows and 2 cols): a,b
+```
+
+### Search and replace in all cells in a `data.table`
+
+```R
+dt <- data.table::data.table(
+  c1 = c(1, 2, 3, 4, 5, 6, 7, 8, 9),
+  c2 = c(3, 4, 5, 6, 7, 8, 9, 1, 2),
+  c3 = c(5, 6, 7, 8, 9, 1, 2, 3, 4)
+)
+
+## print(dt)
+#    c1 c2 c3
+# 1:  1  3  5
+# 2:  2  4  6
+# 3:  3  5  7
+# 4:  4  6  8
+# 5:  5  7  9
+# 6:  6  8  1
+# 7:  7  9  2
+# 8:  8  1  3
+# 9:  9  2  4
+
+for (col in names(dt)) {
+  data.table::set(
+    x = dt,
+    i = which(dt[[col]] == 2),
+    j = col,
+    value = NA
+  )
+}
+## print(dt)
+#    c1 c2 c3
+# 1:  1  3  5
+# 2: NA  4  6
+# 3:  3  5  7
+# 4:  4  6  8
+# 5:  5  7  9
+# 6:  6  8  1
+# 7:  7  9 NA
+# 8:  8  1  3
+# 9:  9 NA  4
 ```
