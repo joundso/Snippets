@@ -39,7 +39,7 @@ alias gs="git status"
 alias ga="git add ."
 # alias gc --> see above
 alias gpull="git pull origin $(git rev-parse --abbrev-ref HEAD)"
-alias gp="gpull && git push origin HEAD"
+alias gp="git push origin HEAD"
 # alias gacp --> see above
 alias gpa="git pull --all"
 
