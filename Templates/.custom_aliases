@@ -46,6 +46,7 @@ alias gpa="git pull --all"
 
 ## Docker
 alias dpa="docker ps -a"
+alias dc="docker-compose"
 alias dcd="docker-compose down"
 alias dcu="docker-compose up -d"
 alias dsp="docker system prune -f"
