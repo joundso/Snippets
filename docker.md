@@ -79,6 +79,12 @@ docker-compose up -d
 
 ## Run a specific docker-compose file:
 docker-compose -f custom.docker-compose.yml up -d
+
+## Run a specific docker-compose file with a specific .env file:
+docker-compose -f custom.docker-compose.yml --env-file /path/to/.env up -d
+
+## Re-build Dockerfile specified in your docker-compose file (use the `--build` flag after the `up` command):
+docker-compose --env-file ../custom.env up --build -d
 ```
 
 ### Stop container (but keep changes within container)
