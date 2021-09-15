@@ -17,6 +17,7 @@
     - [Change the type of multiple columns](#change-the-type-of-multiple-columns)
     - [Copy a `data.table`s structure without its content](#copy-a-datatables-structure-without-its-content)
     - [Search and replace in all cells in a `data.table`](#search-and-replace-in-all-cells-in-a-datatable)
+    - [Add multiple columns to a `data.table` using the `:=` operator](#add-multiple-columns-to-a-datatable-using-the--operator)
 
 ## General
 
@@ -193,3 +194,38 @@ for (col in names(dt)) {
 # 8:  8  1  3
 # 9:  9 NA  4
 ```
+
+### Add multiple columns to a `data.table` using the `:=` operator
+
+``` r
+dt <- data.table::data.table(
+  c1 = c(1, 2, 3),
+  c2 = c(3, 4, 5),
+  c3 = c(5, 6, 7)
+)
+dt
+#>    c1 c2 c3
+#> 1:  1  3  5
+#> 2:  2  4  6
+#> 3:  3  5  7
+
+
+## Option 1:
+dt[, c("newcol_1", "newcol_2") := list("value_for_col_1", "value_for_col_2")]
+dt
+#>    c1 c2 c3        newcol_1        newcol_2
+#> 1:  1  3  5 value_for_col_1 value_for_col_2
+#> 2:  2  4  6 value_for_col_1 value_for_col_2
+#> 3:  3  5  7 value_for_col_1 value_for_col_2
+
+
+## Option 2:
+dt[,`:=`(avg=mean(c1), med=median(c1), min=min(c1))]
+dt
+#>    c1 c2 c3        newcol_1        newcol_2 avg med min
+#> 1:  1  3  5 value_for_col_1 value_for_col_2   2   2   1
+#> 2:  2  4  6 value_for_col_1 value_for_col_2   2   2   1
+#> 3:  3  5  7 value_for_col_1 value_for_col_2   2   2   1
+```
+
+<sup>Created on 2021-09-15 by the [reprex package](https://reprex.tidyverse.org) (v2.0.1)</sup>

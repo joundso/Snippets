@@ -17,6 +17,7 @@ Feel free to comment or create Merge-Requests to keep this collection up to date
 
 ## Current functions for R
 
+- [General stuff](R/R.md)
 - [Boxplot with own calculations for mean, median, min, max, etc.](R/boxplot_with_own_calculations.R)
 - [Find duplicates in an array/vector](R/find_duplicates.R)
 - [Create a Treemap](R/treemap.R)
