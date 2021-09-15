@@ -198,11 +198,9 @@ for (col in names(dt)) {
 ### Add multiple columns to a `data.table` using the `:=` operator
 
 ``` r
-dt <- data.table::data.table(
-  c1 = c(1, 2, 3),
-  c2 = c(3, 4, 5),
-  c3 = c(5, 6, 7)
-)
+dt <- data.table::data.table(c1 = c(1, 2, 3),
+                             c2 = c(3, 4, 5),
+                             c3 = c(5, 6, 7))
 dt
 #>    c1 c2 c3
 #> 1:  1  3  5
@@ -220,7 +218,9 @@ dt
 
 
 ## Option 2:
-dt[,`:=`(avg=mean(c1), med=median(c1), min=min(c1))]
+dt[, `:=`(avg = mean(c1),
+          med = median(c1),
+          min = min(c1))]
 dt
 #>    c1 c2 c3        newcol_1        newcol_2 avg med min
 #> 1:  1  3  5 value_for_col_1 value_for_col_2   2   2   1
