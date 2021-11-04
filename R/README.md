@@ -18,6 +18,7 @@
     - [Copy a `data.table`s structure without its content](#copy-a-datatables-structure-without-its-content)
     - [Search and replace in all cells in a `data.table`](#search-and-replace-in-all-cells-in-a-datatable)
     - [Add multiple columns to a `data.table` using the `:=` operator](#add-multiple-columns-to-a-datatable-using-the--operator)
+    - [Remove all columns with no content](#remove-all-columns-with-no-content)
 
 ## General
 
@@ -197,7 +198,7 @@ for (col in names(dt)) {
 
 ### Add multiple columns to a `data.table` using the `:=` operator
 
-``` r
+```r
 dt <- data.table::data.table(c1 = c(1, 2, 3),
                              c2 = c(3, 4, 5),
                              c3 = c(5, 6, 7))
@@ -229,3 +230,36 @@ dt
 ```
 
 <sup>Created on 2021-09-15 by the [reprex package](https://reprex.tidyverse.org) (v2.0.1)</sup>
+
+### Remove all columns with no content
+
+:bulb: Corrsponding [akrun](https://stackoverflow.com/users/3732271/akrun)s comment [on StackOverflow](https://stackoverflow.com/a/64759996/13890903):
+
+```r
+dt <- data.table::data.table(
+  col_1 = c(1,2,3),
+  col_2 = NA,
+  col_3 = NA,
+  col_4 = c(9,8,7)
+)
+dt
+#>    col_1 col_2 col_3 col_4
+#> 1:     1    NA    NA     9
+#> 2:     2    NA    NA     8
+#> 3:     3    NA    NA     7
+
+names_of_empty_cols <- dt[, names(which(sapply(.SD, function(x) all(is.na(x)))))]
+# or
+# names_of_empty_cols <- dt[, names(which(!colSums(!is.na(.SD))))]
+names_of_empty_cols
+#> [1] "col_2" "col_3"
+
+dt[, (names_of_empty_cols) := NULL]
+dt
+#>    col_1 col_4
+#> 1:     1     9
+#> 2:     2     8
+#> 3:     3     7
+```
+
+<sup>Created on 2021-11-04 by the [reprex package](https://reprex.tidyverse.org) (v2.0.1)</sup>
