@@ -10,8 +10,8 @@ gacp() {
 # Git tag
 gt() {
     git status
-    git tag -a v$1 -m "release v$1"
-    git push origin v$1
+    git tag -a $1 -m "release v$1"
+    git push origin $1
 }
 
 # Git remove tag
