@@ -233,7 +233,7 @@ dt
 
 ### Remove all columns with no content
 
-:bulb: Corrsponding [akrun](https://stackoverflow.com/users/3732271/akrun)s comment [on StackOverflow](https://stackoverflow.com/a/64759996/13890903):
+:bulb: Corresponding to a comment [on Stack Overflow](https://stackoverflow.com/a/64759996/13890903):
 
 ```r
 dt <- data.table::data.table(
