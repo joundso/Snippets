@@ -10,7 +10,7 @@ gacp() {
 # Git tag
 gt() {
     git status
-    git tag -a $1 -m "release v$1"
+    git tag -a $1 -m "release $1"
     git push origin $1
 }
 
