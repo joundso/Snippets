@@ -1,0 +1,7 @@
+_has:Condition:patient:code=http://fhir.de/CodeSystem/dimdi/icd-10-gm|Q20.1,
+_has:Condition:patient:code=http://fhir.de/CodeSystem/dimdi/icd-10-gm|Q20.2,
+_has:Condition:patient:code=http://fhir.de/CodeSystem/dimdi/icd-10-gm|Q20.3,
+_has:Condition:patient:code=http://fhir.de/CodeSystem/dimdi/icd-10-gm|Q20.4,
+_has:Condition:patient:code=http://fhir.de/CodeSystem/dimdi/icd-10-gm|Q20.5,
+_has:Condition:patient:code=http://fhir.de/CodeSystem/dimdi/icd-10-gm|Q22.9&
+_summary=count

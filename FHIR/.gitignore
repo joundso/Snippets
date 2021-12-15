@@ -1,0 +1,12 @@
+/*
+/*/
+
+!/.gitignore
+!/README.md
+!/data-test.txt
+!/default.env
+!/test_post.sh
+
+## Ignore all log-related files:
+**/*[Ll]og*
+**/*.log
