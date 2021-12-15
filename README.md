@@ -7,7 +7,7 @@ Feel free to comment or create Merge-Requests to keep this collection up to date
 
 - [Docker snippets](docker.md)
 - [git snippets](git.md)
-- [FHIR snippets](FHIR/README.md)
+- [FHIR snippets](./FHIR/)
 - [Kubernetes snippets](kubernetes.md)
 - [R snippets](./R/README.md)
 - [Shell/Bash snippets](shell.md)
