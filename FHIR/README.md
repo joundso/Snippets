@@ -3,7 +3,7 @@
 - [FHIR Search with POST](#fhir-search-with-post)
   - [How to use](#how-to-use)
   - [Background / Motivation](#background--motivation)
-    - [The `data-test.txt` file](#the-data-testtxt-file)
+  - [The `data-test.txt` file](#the-data-testtxt-file)
   - [Further readings](#further-readings)
   - [Thanks](#thanks)
 
@@ -18,7 +18,7 @@
 * With `POST` FHIR-Search requests, the URL is always like `https://your-fhir-server/fhir/Patient/_search` but with all sensitive content in its body
 * `GET` requests are limited in length. The body of the `POST` request isn't
 
-### The `data-test.txt` file
+## The `data-test.txt` file
 
 Scheme:
 
