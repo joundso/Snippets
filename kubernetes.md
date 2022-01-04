@@ -14,7 +14,7 @@
     - [Show current Context](#show-current-context)
     - [List all clusters available](#list-all-clusters-available)
     - [Set context to cluster](#set-context-to-cluster)
-    - [Context setzen innerhalb von Templates](#context-setzen-innerhalb-von-templates)
+    - [Set context within a HELM template](#set-context-within-a-helm-template)
   - [Templates](#templates)
     - [Secret](#secret)
     - [Persistent Volume Claim (PVC)](#persistent-volume-claim-pvc)
@@ -101,7 +101,7 @@ kubectl config get-contexts
 kubectl config use-context my-cluster-name
 ```
 
-### Context setzen innerhalb von Templates
+### Set context within a HELM template
 
 ```yaml
   {{with .Values.service}}
