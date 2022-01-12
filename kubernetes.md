@@ -61,7 +61,7 @@ See <https://kubernetes.io/docs/reference/kubectl/cheatsheet/>.
 
 [LENS](https://k8slens.dev/) is a great platform to manage your cluster using a GUI. Give it a try.
 
-### Install [KinD](https://kind.sigs.k8s.io/) (Kubernetes in Docker)
+### Install KinD (Kubernetes in Docker)
 
 [KinD](https://kind.sigs.k8s.io/) (Kubernetes in Docker) is a great way to test Kubernets stuff locally without the need of a high-performance cluster.
 

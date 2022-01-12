@@ -19,6 +19,7 @@
     - [Search and replace in all cells in a `data.table`](#search-and-replace-in-all-cells-in-a-datatable)
     - [Add multiple columns to a `data.table` using the `:=` operator](#add-multiple-columns-to-a-datatable-using-the--operator)
     - [Remove all columns with no content](#remove-all-columns-with-no-content)
+    - [Assign by value/reference](#assign-by-valuereference)
 
 ## General
 
@@ -263,3 +264,31 @@ dt
 ```
 
 <sup>Created on 2021-11-04 by the [reprex package](https://reprex.tidyverse.org) (v2.0.1)</sup>
+
+### Assign by value/reference
+
+``` r
+dt <- data.table::data.table(
+  a = c(1:4),
+  b = c(1:4),
+  c = c(1:4)
+)
+
+(colnames_dynamic <- names(dt))
+#> [1] "a" "b" "c"
+(colnames_static <- rlang::duplicate(names(dt)))
+#> [1] "a" "b" "c"
+
+## Add new colum to dt:
+dt[, "x" := c(11:14)]
+
+## `colnames_dynamic` now also changed (assigned by reference):
+colnames_dynamic
+#> [1] "a" "b" "c" "x"
+
+## `colnames_dynamic` is still unchanged (assigned by value):
+colnames_static
+#> [1] "a" "b" "c"
+```
+
+<sup>Created on 2022-01-12 by the [reprex package](https://reprex.tidyverse.org) (v2.0.1)</sup>
