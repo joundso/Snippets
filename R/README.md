@@ -20,6 +20,7 @@
     - [Add multiple columns to a `data.table` using the `:=` operator](#add-multiple-columns-to-a-datatable-using-the--operator)
     - [Remove all columns with no content](#remove-all-columns-with-no-content)
     - [Assign by value/reference](#assign-by-valuereference)
+    - [Keep first/n rows by group](#keep-firstn-rows-by-group)
 
 ## General
 
@@ -292,3 +293,32 @@ colnames_static
 ```
 
 <sup>Created on 2022-01-12 by the [reprex package](https://reprex.tidyverse.org) (v2.0.1)</sup>
+
+### Keep first/n rows by group
+
+``` r
+(dx <-
+  data.frame(
+    ID = factor(c(1, 1, 2, 2, 3, 3)),
+    AGE = c(30, 30, 40, 40, 35, 35),
+    FEM = factor(c(1, 1, 0, 0, 1, 1))
+  ))
+#>   ID AGE FEM
+#> 1  1  30   1
+#> 2  1  30   1
+#> 3  2  40   0
+#> 4  2  40   0
+#> 5  3  35   1
+#> 6  3  35   1
+
+dxt <- data.table::data.table(dx, key='ID')
+dxt[, .SD[1,], by=ID]
+#>    ID AGE FEM
+#> 1:  1  30   1
+#> 2:  2  40   0
+#> 3:  3  35   1
+```
+
+<sup>Created on 2022-01-18 by the [reprex package](https://reprex.tidyverse.org) (v2.0.1)</sup>
+
+Source: <https://stats.stackexchange.com/a/7886>
