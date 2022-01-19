@@ -216,7 +216,7 @@ dt
 
 <sup>Created on 2022-01-19 by the [reprex package](https://reprex.tidyverse.org) (v2.0.1)</sup>
 
-Thanks to @kapsner for the inspiration of option 2! :+1:
+Thanks to [@kapsner](https://github.com/kapsner/) for the inspiration of option 2! :+1:
 ### Add multiple columns to a `data.table` using the `:=` operator
 
 ```r
