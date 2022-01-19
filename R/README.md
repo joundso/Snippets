@@ -158,25 +158,26 @@ data_structure <- data[0, ]
 
 ### Search and replace in all cells in a `data.table`
 
-```R
+``` r
 dt <- data.table::data.table(
   c1 = c(1, 2, 3, 4, 5, 6, 7, 8, 9),
   c2 = c(3, 4, 5, 6, 7, 8, 9, 1, 2),
   c3 = c(5, 6, 7, 8, 9, 1, 2, 3, 4)
 )
+dt
+#>    c1 c2 c3
+#> 1:  1  3  5
+#> 2:  2  4  6
+#> 3:  3  5  7
+#> 4:  4  6  8
+#> 5:  5  7  9
+#> 6:  6  8  1
+#> 7:  7  9  2
+#> 8:  8  1  3
+#> 9:  9  2  4
 
-## print(dt)
-#    c1 c2 c3
-# 1:  1  3  5
-# 2:  2  4  6
-# 3:  3  5  7
-# 4:  4  6  8
-# 5:  5  7  9
-# 6:  6  8  1
-# 7:  7  9  2
-# 8:  8  1  3
-# 9:  9  2  4
-
+## Option 1: 
+## Change all cells containing '2' as value to 'NA'
 for (col in names(dt)) {
   data.table::set(
     x = dt,
@@ -185,19 +186,37 @@ for (col in names(dt)) {
     value = NA
   )
 }
-## print(dt)
-#    c1 c2 c3
-# 1:  1  3  5
-# 2: NA  4  6
-# 3:  3  5  7
-# 4:  4  6  8
-# 5:  5  7  9
-# 6:  6  8  1
-# 7:  7  9 NA
-# 8:  8  1  3
-# 9:  9 NA  4
+dt
+#>    c1 c2 c3
+#> 1:  1  3  5
+#> 2: NA  4  6
+#> 3:  3  5  7
+#> 4:  4  6  8
+#> 5:  5  7  9
+#> 6:  6  8  1
+#> 7:  7  9 NA
+#> 8:  8  1  3
+#> 9:  9 NA  4
+
+## Option 2 (thanks to @kapsner):
+## Change all cells containing '3' as value to 'NA'
+dt[dt == 3] <- NA
+dt
+#>    c1 c2 c3
+#> 1:  1 NA  5
+#> 2: NA  4  6
+#> 3: NA  5  7
+#> 4:  4  6  8
+#> 5:  5  7  9
+#> 6:  6  8  1
+#> 7:  7  9 NA
+#> 8:  8  1 NA
+#> 9:  9 NA  4
 ```
 
+<sup>Created on 2022-01-19 by the [reprex package](https://reprex.tidyverse.org) (v2.0.1)</sup>
+
+Thanks to @kapsner for the inspiration of option 2! :+1:
 ### Add multiple columns to a `data.table` using the `:=` operator
 
 ```r
