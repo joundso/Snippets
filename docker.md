@@ -18,7 +18,7 @@
   - [Remove docker images](#remove-docker-images)
   - [Remove stopped containers](#remove-stopped-containers)
   - [Tag an image during the build process](#tag-an-image-during-the-build-process)
-  - [Tag an image with is already built](#tag-an-image-with-is-already-built)
+  - [Tag an already built image](#tag-an-already-built-image)
   - [Change docker path under WSL2 (PowerShell)](#change-docker-path-under-wsl2-powershell)
   - [Access an docker image with a bash inside](#access-an-docker-image-with-a-bash-inside)
   - [Send / Transfer an image without a docker registry / harbor](#send--transfer-an-image-without-a-docker-registry--harbor)
@@ -173,7 +173,7 @@ docker build -t "imageNAME:imageTAG" .
 
 Don't forget the last `.`! =)
 
-## Tag an image with is already built
+## Tag an already built image
 
 ```bash
 docker tag <old-image-name>:<old-image-tag> <new-image-name>:<new-image-tag>
