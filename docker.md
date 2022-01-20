@@ -17,7 +17,8 @@
   - [Remove docker container](#remove-docker-container)
   - [Remove docker images](#remove-docker-images)
   - [Remove stopped containers](#remove-stopped-containers)
-  - [Tag an already built image](#tag-an-already-built-image)
+  - [Tag an image during the build process](#tag-an-image-during-the-build-process)
+  - [Tag an image with is already built](#tag-an-image-with-is-already-built)
   - [Change docker path under WSL2 (PowerShell)](#change-docker-path-under-wsl2-powershell)
   - [Access an docker image with a bash inside](#access-an-docker-image-with-a-bash-inside)
   - [Send / Transfer an image without a docker registry / harbor](#send--transfer-an-image-without-a-docker-registry--harbor)
@@ -49,7 +50,7 @@
 docker build -t tagname .
 
 ## Build with custom dockerfile and custom tag:
-docker build -f Dockerfile -t containername .
+docker build -f Dockerfile -t containername:tag .
 ```
 
 ## Push an image to a hub/harbor
@@ -142,7 +143,12 @@ docker system prune
 ## Remove docker container
 
 ```bash
-docker container ls -a
+## List all containers:
+docker ps -a
+## or: 
+# docker container ls -a
+
+## Remove the container(s) by id:
 docker container rm ID1 ID2
 ```
 
@@ -159,13 +165,19 @@ docker image rmi ID1 ID2
 docker rm `docker ps --no-trunc -aq`
 ```
 
-## Tag an already built image
+## Tag an image during the build process
 
 ```bash
 docker build -t "imageNAME:imageTAG" .
 ```
 
-Don't forget the last `.`. =)
+Don't forget the last `.`! =)
+
+## Tag an image with is already built
+
+```bash
+docker tag <old-image-name>:<old-image-tag> <new-image-name>:<new-image-tag>
+```
 
 ## Change docker path under WSL2 (PowerShell)
 
