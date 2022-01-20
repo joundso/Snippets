@@ -20,6 +20,7 @@
   - [Tag an already built image](#tag-an-already-built-image)
   - [Change docker path under WSL2 (PowerShell)](#change-docker-path-under-wsl2-powershell)
   - [Access an docker image with a bash inside](#access-an-docker-image-with-a-bash-inside)
+  - [Send / Transfer an image without a docker registry / harbor](#send--transfer-an-image-without-a-docker-registry--harbor)
 
 ## Changing rights inside a container
 
@@ -182,4 +183,26 @@ wsl --import docker-desktop-data "K:\Docker" "K:\Docker\docker-desktop-data.tar"
 docker run -it IMAGENAME /bin/bash
 
 ## Try //bin//bash if the upper command doesn't work.
+```
+
+## Send / Transfer an image without a docker registry / harbor
+
+Reffering to <https://stackoverflow.com/a/23938978> and <https://stackoverflow.com/a/26226261>
+
+```bash
+## Don't forget to mention the image tag, otherwise the image won't be tagged after unpacking it:
+# docker save -o <path for generated tar file> <image name>
+docker save -o /tmp/myfile.tar centos:16
+
+## Then on the target system, load the file:
+docker load -i <path to image tar file>
+```
+
+Transferring a Docker image via SSH, bzipping the content on the fly:
+
+```bash
+docker save <image> | bzip2 | ssh user@host docker load
+
+## Or with visualization of the transfer process:
+docker save <image> | bzip2 | pv | ssh user@host docker load
 ```
