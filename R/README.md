@@ -21,6 +21,7 @@
     - [Remove all columns with no content](#remove-all-columns-with-no-content)
     - [Assign by value/reference](#assign-by-valuereference)
     - [Keep first/n rows by group](#keep-firstn-rows-by-group)
+  - [Apply CRAN checks locally to current package](#apply-cran-checks-locally-to-current-package)
 
 ## General
 
@@ -341,3 +342,9 @@ dxt[, .SD[1,], by=ID]
 <sup>Created on 2022-01-18 by the [reprex package](https://reprex.tidyverse.org) (v2.0.1)</sup>
 
 Source: <https://stats.stackexchange.com/a/7886>
+
+## Apply CRAN checks locally to current package
+
+```r
+rcmdcheck::rcmdcheck(args = "--as-cran")
+```
