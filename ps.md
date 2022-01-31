@@ -6,4 +6,4 @@
 <file.exe> /s /x /b"<target-folder>" /v"/qn"
 ```
 
-((Source)[https://www.codetwo.com/kb/msi-from-exe/])
+([Source](https://www.codetwo.com/kb/msi-from-exe/))
