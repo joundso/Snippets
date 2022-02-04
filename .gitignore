@@ -22,8 +22,9 @@
 ## ... and then whitelist files we want to track explicitly:
 !/R/treemap.R
 
-## Add folder "FHIR" completely (there is another .gitignore file inside):
+## Add folders completely (there might be another .gitignore file inside):
 !/FHIR/
+!/gitlab/
 
 ## Ignore all log-related files:
 **/*[Ll]og*
