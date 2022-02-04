@@ -7,6 +7,7 @@ Feel free to comment or create Merge-Requests to keep this collection up to date
 
 - [Docker snippets](docker.md)
 - [git snippets](git.md)
+- [GitLab snippets](./Gitlab/README.md)
 - [FHIR snippets](./FHIR/)
 - [Kubernetes snippets](kubernetes.md)
 - [R snippets](./R/README.md)
@@ -15,6 +16,7 @@ Feel free to comment or create Merge-Requests to keep this collection up to date
 
 ## Current functions for GitLab
 
+- [General stuff](./Gitlab/README.md)
 - [Remove CI/CD-Pipelines](Gitlab/gitlab_remove_pipeline.py)
 
 ## Current functions for R
