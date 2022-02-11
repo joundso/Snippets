@@ -15,12 +15,15 @@
 ## ---
 ## If we want to track a folder, whitelist it completely:
 !/R/
+!/misc/
 
 ## ... but then immedeately blacklist all its content:
 /R/*
+/misc/*
 
 ## ... and then whitelist files we want to track explicitly:
 !/R/treemap.R
+!/misc/toilet_warning.md
 
 ## Add folders completely (there might be another .gitignore file inside):
 !/FHIR/
