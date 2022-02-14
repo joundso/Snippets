@@ -18,10 +18,10 @@ gt() {
 gtr() {
     git status
     # delete local tag
-    git tag -d v$1
+    git tag -d $1
 
     # push deleted tag
-    git push -d origin v$1
+    git push -d origin $1
 }
 
 # Git Commit
