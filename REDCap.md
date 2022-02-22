@@ -2,6 +2,11 @@
 
 ## Snippets using R
 
+:info:
+
+- R package to interact with REDCap: [`REDCapR`](https://github.com/OuhscBbmc/REDCapR)
+- REDCap information: <https://www.project-redcap.org/>
+
 ### Assign records to a data access group (DAG)
 
 ```r
