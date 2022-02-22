@@ -7,8 +7,7 @@
 
 ## Then successively add the whitlist elements you want to track:
 !/.gitignore
-!/CHANGELOG.md
-!/README.md
+!/*.md
 
 ## ---
 ## FOLDERS
