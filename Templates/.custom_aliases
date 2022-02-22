@@ -43,6 +43,13 @@ alias gp="git push origin HEAD"
 # alias gacp --> see above
 alias gpa="git pull --all"
 
+## Create a NEWS.md Changelog file based on the commit messages
+## provided using conventional commits <https://www.conventionalcommits.org/en>.
+## Python required.
+## pip install markupsafe==2.0.1
+## pip install auto-changelog
+alias news='auto-changelog -u -t "NEWS" -o "NEWS.md"'
+
 
 ## Docker
 alias dpa="docker ps -a"
