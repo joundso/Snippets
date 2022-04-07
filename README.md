@@ -9,6 +9,7 @@ Feel free to comment or create Merge-Requests to keep this collection up to date
 - [git snippets](git.md)
 - [GitLab snippets](./Gitlab/README.md)
 - [FHIR snippets](./FHIR/)
+- [JIRA](./jira.md)
 - [Kubernetes snippets](kubernetes.md)
 - [R snippets](./R/README.md)
 - [Shell/Bash snippets](shell.md)
