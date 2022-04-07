@@ -26,4 +26,4 @@
     key = EMEA-2459 OR "Epic Link" = EMEA-2459 OR issue IN subtasksOf(' "Epic Link" = EMEA-2459 ')
     ```
 
-Source: <https://community.atlassian.com/t5/Jira-Software-questions/JQL-to-show-all-issues-and-subtasks-in-an-epic/qaq-p/1432325#M88404>.
+([Source](https://community.atlassian.com/t5/Jira-Software-questions/JQL-to-show-all-issues-and-subtasks-in-an-epic/qaq-p/1432325#M88404))
