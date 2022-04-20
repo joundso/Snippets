@@ -72,3 +72,5 @@ alias k=kubectl
 alias opencustomaliases="code  ~/.custom_aliases"
 alias updatecustomaliases="source ~/.bashrc"
 alias updatethenupgrade="sudo apt-get update && sudo apt-get upgrade"
+
+alias test="echo -e '\u2714' Test successfull"
