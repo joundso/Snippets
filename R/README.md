@@ -28,8 +28,6 @@
     - [`class`es](#classes)
     - [`background-image`](#background-image)
   - [CRAN releases](#cran-releases)
-    - [Check locak package for CRAN](#check-locak-package-for-cran)
-    - [Submit to CRAN](#submit-to-cran)
 
 ## General
 
@@ -411,14 +409,10 @@ background-size: contain/cover;
 
 ## CRAN releases
 
-### Check locak package for CRAN
-
 ```r
+## Apply CRAN checks to local package before submitting to CRAN:
 rcmdcheck::rcmdcheck(args = "--as-cran")
-```
 
-### Submit to CRAN
-
-```r
+## Submit to CRAN:
 devtools::submit_cran()
 ```
