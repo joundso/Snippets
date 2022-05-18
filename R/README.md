@@ -22,6 +22,14 @@
     - [Assign by value/reference](#assign-by-valuereference)
     - [Keep first/n rows by group](#keep-firstn-rows-by-group)
   - [Apply CRAN checks locally to current package](#apply-cran-checks-locally-to-current-package)
+  - [Xaringan (Presentations with R)](#xaringan-presentations-with-r)
+    - [Some public templates](#some-public-templates)
+    - [Formatting slides](#formatting-slides)
+    - [`class`es](#classes)
+    - [`background-image`](#background-image)
+  - [CRAN releases](#cran-releases)
+    - [Check locak package for CRAN](#check-locak-package-for-cran)
+    - [Submit to CRAN](#submit-to-cran)
 
 ## General
 
@@ -105,6 +113,13 @@ rm(list = ls()) # Clears the Global Environment/variables/data
 invisible(gc()) # Garbage collector/Clear unused RAM
 # Start coding now:
 print("Hello world! =)")
+```
+
+Or:
+
+```R
+# install.packages("cleaR")
+cleaR::clear()
 ```
 
 ## Determine elements existing in two or more vectors
@@ -218,6 +233,7 @@ dt
 <sup>Created on 2022-01-19 by the [reprex package](https://reprex.tidyverse.org) (v2.0.1)</sup>
 
 Thanks to [@kapsner](https://github.com/kapsner/) for the inspiration of option 2! :+1:
+
 ### Add multiple columns to a `data.table` using the `:=` operator
 
 ```r
@@ -347,4 +363,62 @@ Source: <https://stats.stackexchange.com/a/7886>
 
 ```r
 rcmdcheck::rcmdcheck(args = "--as-cran")
+```
+
+## Xaringan (Presentations with R)
+
+### Some public templates
+
+| Title | Slides | Code |
+|---|---|---|
+|Xaringan example - RU template| [Slides](https://www.jvcasillas.com/ru_xaringan/slides/index.html#1) | [Code](https://github.com/jvcasillas/ru_xaringan/blob/master/slides/index.Rmd) |
+<!-- | Title | [Slides](url) | [Code](url) | -->
+
+### Formatting slides
+
+| Action | Command |
+|---|---|
+|C
+
+### `class`es
+
+The classes available for **vertically** aligning text are:
+
+- `top` (default)
+- `middle`
+- `bottom`
+
+The classes available for **horizontally** aligning text are:
+
+- `left` (default)
+- `center`
+- `right`
+
+Other classes:
+
+- `inverse` (inverse colors - black background and white font)
+
+([Source](https://github.com/gnab/remark/wiki/Formatting#whole-slide-text-alignment))
+
+### `background-image`
+
+```yaml
+background-image: url(image.jpg)`
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain/cover;
+```
+
+## CRAN releases
+
+### Check locak package for CRAN
+
+```r
+rcmdcheck::rcmdcheck(args = "--as-cran")
+```
+
+### Submit to CRAN
+
+```r
+devtools::submit_cran()
 ```
