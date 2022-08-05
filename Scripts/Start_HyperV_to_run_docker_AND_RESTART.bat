@@ -3,4 +3,4 @@
 :: StartingHyperV (To run Docker but NOT VirtualBox)
 bcdedit /set hypervisorlaunchtype auto
 :: Restart
-shutdown -t 100 -r -f
+shutdown -t 60 -r -f
