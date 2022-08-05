@@ -28,6 +28,7 @@
     - [`class`es](#classes)
     - [`background-image`](#background-image)
   - [CRAN releases](#cran-releases)
+  - [Quarto](#quarto)
 
 ## General
 
@@ -416,3 +417,7 @@ rcmdcheck::rcmdcheck(args = "--as-cran")
 ## Submit to CRAN:
 devtools::submit_cran()
 ```
+
+## Quarto
+
+:info: See here: `[../quarto.md](../quarto.md)`

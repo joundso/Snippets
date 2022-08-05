@@ -11,6 +11,7 @@ Feel free to comment or create Merge-Requests to keep this collection up to date
 - [FHIR snippets](./FHIR/)
 - [JIRA](./jira.md)
 - [Kubernetes snippets](kubernetes.md)
+- [Quarto](./quarto.md)
 - [R snippets](./R/README.md)
 - [Shell/Bash snippets](shell.md)
 - [Visual Studio Code snippets](vscode.md)
