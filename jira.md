@@ -3,6 +3,7 @@
 - [JIRA Snippets](#jira-snippets)
   - [JQL](#jql)
     - [Show all tickets related to an epic](#show-all-tickets-related-to-an-epic)
+    - [Show all tickets related to epics that fit some conditions](#show-all-tickets-related-to-epics-that-fit-some-conditions)
 
 ## JQL
 
@@ -27,3 +28,18 @@
     ```
 
 ([Source](https://community.atlassian.com/t5/Jira-Software-questions/JQL-to-show-all-issues-and-subtasks-in-an-epic/qaq-p/1432325#M88404))
+
+### Show all tickets related to epics that fit some conditions
+
+1. Create a filter and assign the logic to select the epics:
+
+    ```sql
+    -- Safe this as filter and remember the new filter-id (e.g. filter=123)
+    project = TESTPRJ AND component = PRJ AND labels in (dev-project, qs-projekt)
+    ```
+
+2. Create the JQL query searching for epics/issues defined in the previous filter AND all issues below them:
+
+    ```sql
+    issueFunction in issuesInEpics("filter = 123") OR filter = 123
+    ```
