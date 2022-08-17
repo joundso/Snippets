@@ -43,3 +43,5 @@
     ```sql
     issueFunction in issuesInEpics("filter = 123") OR filter = 123
     ```
+
+Source: <https://scriptrunner.adaptavist.com/latest/jira/jql-functions.html#_more_complex_examples>
