@@ -16,6 +16,7 @@ Feel free to comment or create Merge-Requests to keep this collection up to date
 - [Shell/Bash snippets](./shell.md)
 - [Visual Studio Code snippets](./vscode.md)
 - [Windows](./windows.md)
+- [Firewall rules](./firewall_rules.md)
 
 ## Current functions for GitLab
 

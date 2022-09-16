@@ -9,7 +9,10 @@
 ### SMB File share
 
 - TCP 445 (for the actual file sharing)
-- UDP 137 + 138 (for NetBios/Name resolution)
-- TCP 139 (for NetBios/Name resolution)
+
+Optional for NetBios/Name resolution:
+
+- UDP 137, 138
+- TCP 139
 
 ([Source](https://serverfault.com/a/346197))
