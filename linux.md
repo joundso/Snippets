@@ -1,8 +1,14 @@
-# Shell Snippets
+# Linux Shell Snippets
 
-- [Shell Snippets](#shell-snippets)
+- [Linux Shell Snippets](#linux-shell-snippets)
   - [Nano: Mark all](#nano-mark-all)
-  - [SSH: Connect with path to keyfile](#ssh-connect-with-path-to-keyfile)
+  - [SSH](#ssh)
+    - [Connect with path to keyfile](#connect-with-path-to-keyfile)
+    - [Create new SSH key](#create-new-ssh-key)
+    - [Upload new SSH key to remote server](#upload-new-ssh-key-to-remote-server)
+    - [Remote files for SSH configuration](#remote-files-for-ssh-configuration)
+  - [Create text-tree of folder structure](#create-text-tree-of-folder-structure)
+    - [Install `tree` for git-bash](#install-tree-for-git-bash)
 
 ## Nano: Mark all
 
@@ -59,3 +65,22 @@ sudo service sshd restart
 
 exit
 ```
+
+## Create text-tree of folder structure
+
+```bash
+## Folders only:
+tree -d /path/to/folder/
+
+## Folders and files:
+tree /path/to/folder/
+
+## Flags (source: https://linux.die.net/man/1/tree):
+## -d     directories only
+## -L #   Recursion depth (replace `#` with a number)
+## -C     Add color to the output
+```
+
+### Install `tree` for git-bash
+
+--> <https://dev.to/flyingduck92/add-tree-to-git-bash-on-windows-10-1eb1>

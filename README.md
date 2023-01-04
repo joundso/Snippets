@@ -13,7 +13,7 @@ Feel free to comment or create Merge-Requests to keep this collection up to date
 - [Kubernetes snippets](./kubernetes.md)
 - [Quarto](./quarto.md)
 - [R snippets](./R/README.md)
-- [Shell/Bash snippets](./shell.md)
+- [Linux Shell/Bash snippets](./linux.md)
 - [Visual Studio Code snippets](./vscode.md)
 - [Windows](./windows.md)
 - [Firewall rules](./firewall_rules.md)
