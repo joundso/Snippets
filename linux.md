@@ -84,3 +84,19 @@ tree /path/to/folder/
 ### Install `tree` for git-bash using Windows
 
 --> <https://dev.to/flyingduck92/add-tree-to-git-bash-on-windows-10-1eb1>
+
+## Show disc usage
+
+```bash
+du -sh
+## Remember "doosh" --> du -sh
+```
+
+## Find largest files or folders
+
+```bash
+sudo apt-get install ncdu
+ncdu
+```
+
+Source: <https://wiki.ubuntuusers.de/Festplattenbelegung/>
