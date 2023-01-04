@@ -89,7 +89,7 @@ tree /path/to/folder/
 
 ```bash
 du -sh
-## Remember "doosh" --> du -sh
+## Remember "DOOSH" --> du -sh
 ```
 
 ## Find largest files or folders
