@@ -8,7 +8,7 @@
     - [Upload new SSH key to remote server](#upload-new-ssh-key-to-remote-server)
     - [Remote files for SSH configuration](#remote-files-for-ssh-configuration)
   - [Create text-tree of folder structure](#create-text-tree-of-folder-structure)
-    - [Install `tree` for git-bash](#install-tree-for-git-bash)
+    - [Install `tree` for git-bash using Windows](#install-tree-for-git-bash-using-windows)
 
 ## Nano: Mark all
 
@@ -81,6 +81,6 @@ tree /path/to/folder/
 ## -C     Add color to the output
 ```
 
-### Install `tree` for git-bash
+### Install `tree` for git-bash using Windows
 
 --> <https://dev.to/flyingduck92/add-tree-to-git-bash-on-windows-10-1eb1>
