@@ -9,6 +9,8 @@
     - [Remote files for SSH configuration](#remote-files-for-ssh-configuration)
   - [Create text-tree of folder structure](#create-text-tree-of-folder-structure)
     - [Install `tree` for git-bash using Windows](#install-tree-for-git-bash-using-windows)
+  - [Show disc usage](#show-disc-usage)
+  - [Find largest files or folders](#find-largest-files-or-folders)
 
 ## Nano: Mark all
 
@@ -90,6 +92,8 @@ tree /path/to/folder/
 ```bash
 du -sh
 ## Remember "DOOSH" --> du -sh
+
+ncdu
 ```
 
 ## Find largest files or folders
