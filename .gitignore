@@ -28,6 +28,7 @@
 !/Templates/.bashrc
 !/Templates/.custom_aliases
 !/Templates/.zshrc
+!/Templates/.wslconfig
 !/misc/toilet_warning.md
 
 ## Add folders completely (there might be another .gitignore file inside):
