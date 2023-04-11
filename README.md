@@ -6,17 +6,17 @@ Feel free to comment or create Merge-Requests to keep this collection up to date
 ## Current Snippets
 
 - [Docker snippets](./docker.md)
+- [FHIR snippets](./FHIR/)
+- [Firewall rules](./firewall_rules.md)
 - [git snippets](./git.md)
 - [GitLab snippets](./Gitlab/README.md)
-- [FHIR snippets](./FHIR/)
 - [JIRA](./jira.md)
 - [Kubernetes snippets](./kubernetes.md)
+- [Linux Shell/Bash snippets](./linux.md)
 - [Quarto](./quarto.md)
 - [R snippets](./R/README.md)
-- [Linux Shell/Bash snippets](./linux.md)
 - [Visual Studio Code snippets](./vscode.md)
 - [Windows](./windows.md)
-- [Firewall rules](./firewall_rules.md)
 
 ## Current functions for GitLab
 
