@@ -28,9 +28,8 @@ Chunk options included this way use YAML syntax rather than R syntax for consist
 ## Multiple newlines
 
 ```r
-# Option 1 - LaTeX:
+## Option 1 - LaTeX:
 $$
-<!-- 5 newlines in LaTeX style: -->
 \\[5\baselineskip]
 $$
 
