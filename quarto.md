@@ -4,6 +4,7 @@
   - [Templates](#templates)
   - [Using R code in YAML syntax](#using-r-code-in-yaml-syntax)
   - [Chunk options](#chunk-options)
+  - [Multiple newlines](#multiple-newlines)
 
 ## Templates
 
@@ -23,3 +24,23 @@ Chunk options included this way use YAML syntax rather than R syntax for consist
 ## Chunk options
 
 <https://quarto.org/docs/reference/cells/cells-knitr.html>
+
+## Multiple newlines
+
+```r
+# Option 1 - LaTeX:
+$$
+<!-- 5 newlines in LaTeX style: -->
+\\[5\baselineskip]
+$$
+
+
+## Option 2 - LaTeX:
+\bigskip
+
+
+## Option 3 - Word/HTML:
+<br />
+
+```
+
