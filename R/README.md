@@ -29,6 +29,7 @@
     - [`background-image`](#background-image)
   - [CRAN releases](#cran-releases)
   - [Quarto](#quarto)
+  - [Inspect a `data.table` or `data.frame` object](#inspect-a-datatable-or-dataframe-object)
 
 ## General
 
@@ -421,3 +422,9 @@ devtools::submit_cran()
 ## Quarto
 
 :info: See here: `[../quarto.md](../quarto.md)`
+
+## Inspect a `data.table` or `data.frame` object
+
+```r
+dt |> skimr::skim()
+```

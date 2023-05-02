@@ -5,6 +5,7 @@
   - [Using R code in YAML syntax](#using-r-code-in-yaml-syntax)
   - [Chunk options](#chunk-options)
   - [Multiple newlines](#multiple-newlines)
+  - [Non breaking space / no linebreak in word group](#non-breaking-space--no-linebreak-in-word-group)
 
 ## Templates
 
@@ -43,3 +44,8 @@ $$
 
 ```
 
+## Non breaking space / no linebreak in word group
+
+```r
+&nbsp;
+```
