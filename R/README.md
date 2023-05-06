@@ -30,6 +30,7 @@
   - [CRAN releases](#cran-releases)
   - [Quarto](#quarto)
   - [Inspect a `data.table` or `data.frame` object](#inspect-a-datatable-or-dataframe-object)
+  - [Special characters](#special-characters)
 
 ## General
 
@@ -427,4 +428,14 @@ devtools::submit_cran()
 
 ```r
 dt |> skimr::skim()
+```
+
+## Special characters
+
+```qmd
+## Protected space:
+&#160;
+
+## Registered trademark (r):
+&#174;
 ```
