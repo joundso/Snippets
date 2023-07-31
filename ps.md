@@ -1,5 +1,9 @@
 # Powershell / CMD commands
 
+- [Powershell / CMD commands](#powershell--cmd-commands)
+  - [Extract .msi from .exe file](#extract-msi-from-exe-file)
+  - [Run `.sh` script using git-bash from cmd or PowerShell](#run-sh-script-using-git-bash-from-cmd-or-powershell)
+
 ## Extract .msi from .exe file
 
 ```bash
@@ -8,7 +12,7 @@
 
 ([Source](https://www.codetwo.com/kb/msi-from-exe/))
 
-## Run `.sh` script using git-bash from cmd or PowerShel
+## Run `.sh` script using git-bash from cmd or PowerShell
 
 ```bash
 ## In PowerShell run:
