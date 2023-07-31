@@ -29,8 +29,8 @@ A `test.sh` might look like this:
 ```bash
 #!/bin/bash
 
-echo "--> Supi! Das hier kommt aus dem test.sh Skript. <--"
-date > ./neue_datei.txt
+echo "--> Tada! This message is from within the test.sh file. <--"
+date > ./new_file.txt
 ```
 
 ([Source and additional information about using the windows task scheduler](https://gist.github.com/damc-dev/eb5e1aef001eef78c0f4?permalink_comment_id=3764160#gistcomment-3764160))
