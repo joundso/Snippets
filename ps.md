@@ -22,6 +22,15 @@ cmd /c '"C:\Program Files\Git\git-bash.exe" /c/Temp/test.sh'
 "C:\Program Files\Git\git-bash.exe" /c/Temp/test.sh
 ```
 
-Optional parameters for the git-bash might be `--login -i -c` (`-i` to indicate interactive mode, `-c` to indicate working directory)
+Optional parameters for the git-bash might be `--login -i -c` (`-i` to indicate interactive mode, `-c` to indicate working directory).
+
+A `test.sh` might look like this:
+
+```bash
+#!/bin/bash
+
+echo "--> Supi! Das hier kommt aus dem test.sh Skript. <--"
+date > ./neue_datei.txt
+```
 
 ([Source and additional information about using the windows task scheduler](https://gist.github.com/damc-dev/eb5e1aef001eef78c0f4?permalink_comment_id=3764160#gistcomment-3764160))
