@@ -104,3 +104,10 @@ ncdu
 ```
 
 Source: <https://wiki.ubuntuusers.de/Festplattenbelegung/>
+
+## Mount SMB folders
+
+```bash
+## Preparation:
+sudo apt-get install cifs-utils
+```
