@@ -4,6 +4,7 @@
   - [JQL](#jql)
     - [Show all tickets related to an epic](#show-all-tickets-related-to-an-epic)
     - [Show all tickets related to epics that fit some conditions](#show-all-tickets-related-to-epics-that-fit-some-conditions)
+    - [Show all epics related to some issues](#show-all-epics-related-to-some-issues)
 
 ## JQL
 
@@ -45,3 +46,9 @@
     ```
 
 Source: <https://scriptrunner.adaptavist.com/latest/jira/jql-functions.html#_more_complex_examples>
+
+### Show all epics related to some issues
+
+```sql
+issueFunction in epicsOf("status = erledigt AND labels = Abrechnung") and component = CTP
+```
