@@ -32,6 +32,7 @@ ssh -i /drive/path/file user@server
 
 ```bash
 ssh-keygen -o
+ssh-keygen -m PEM -t rsa -b 4096
 ```
 
 ### Upload new SSH key to remote server
@@ -39,7 +40,7 @@ ssh-keygen -o
 On the local machine run:
 
 ```bash
-ssh-copy-id -i ~/.ssh/mykey user@host_or_ip
+ssh-copy-id -f -i ~/.ssh/mykey user@host_or_ip
 ```
 
 ### Remote files for SSH configuration
