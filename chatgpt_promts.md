@@ -1,5 +1,20 @@
 # ChatGPT Promts
 
+- [ChatGPT Promts](#chatgpt-promts)
+  - [Lehre](#lehre)
+    - [Discussion (English)](#discussion-english)
+    - [Diskussion (German)](#diskussion-german)
+    - [Storytelling (English)](#storytelling-english)
+    - [Geschichtenerzählen (German)](#geschichtenerzählen-german)
+    - [Text assignment (English)](#text-assignment-english)
+    - [Text assignment](#text-assignment)
+    - [Open questions (English)](#open-questions-english)
+    - [Offene Fragen (German)](#offene-fragen-german)
+    - [Quiz questions (English)](#quiz-questions-english)
+    - [Quizfragen (German)](#quizfragen-german)
+    - [Feedback (English)](#feedback-english)
+    - [Feedback (German)](#feedback-german)
+
 ## Lehre
 
 :bulb: Source of the following: [ChatGPT-4 Cookbook, ProLehre, TUM, Version 1.0](https://www.prolehre.tum.de/fileadmin/w00btq/www/Angebote_Broschueren_Handreichungen/ChatGPT-4_Cookbook.pdf)

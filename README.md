@@ -5,6 +5,7 @@ Feel free to comment or create Merge-Requests to keep this collection up to date
 
 ## Current Snippets
 
+- [ChatGPT prompts](./chatgpt_promts.md)
 - [Docker snippets](./docker.md)
 - [FHIR snippets](./FHIR/)
 - [Firewall rules](./firewall_rules.md)
