@@ -19,6 +19,10 @@
 
 :bulb: Source of the following: [ChatGPT-4 Cookbook, ProLehre, TUM, Version 1.0](https://www.prolehre.tum.de/fileadmin/w00btq/www/Angebote_Broschueren_Handreichungen/ChatGPT-4_Cookbook.pdf)
 
+Further readings:
+
+- ["Didaktischer Einsatz von KI" (German)](https://tu-dresden.de/zill/materialien-und-tipps-fuer-die-lehre/digital-tools/einsatz-von-ki-in-der-lehre)
+
 ### Discussion (English)
 
 ```txt
