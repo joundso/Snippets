@@ -11,6 +11,7 @@
     - [Install `tree` for git-bash using Windows](#install-tree-for-git-bash-using-windows)
   - [Show disc usage](#show-disc-usage)
   - [Find largest files or folders](#find-largest-files-or-folders)
+  - [Mount SMB folders](#mount-smb-folders)
 
 ## Nano: Mark all
 
