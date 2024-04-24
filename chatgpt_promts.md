@@ -7,7 +7,7 @@
     - [Storytelling (English)](#storytelling-english)
     - [Geschichtenerzählen (German)](#geschichtenerzählen-german)
     - [Text assignment (English)](#text-assignment-english)
-    - [Text assignment (German)](#text-assignment-german)
+    - [Textaufgabe erstellen (German)](#textaufgabe-erstellen-german)
     - [Open questions (English)](#open-questions-english)
     - [Offene Fragen (German)](#offene-fragen-german)
     - [Quiz questions (English)](#quiz-questions-english)
@@ -53,7 +53,7 @@ Ich möchte, dass Sie als Geschichtenerzähler auftreten. Sie werden sich eine u
 I want you to generate a text assignment. I will give you a task I want students to do. You introduce this task. Your introduction should be short but explain why it's important to be able to do this task. Under no circumstances hint or tell the answer to the question. Your target group is university students. Please keep it under 1000 characters. Start by asking me what my task for the students is. Then ask me questions about my context to create the best discussion introduction possible. If you feel you have all the context necessary, think step by step when creating your text assignment.
 ```
 
-### Text assignment (German)
+### Textaufgabe erstellen (German)
 
 ```txt
 Ich möchte, dass Sie eine Textaufgabe erstellen. Ich gebe Ihnen eine Aufgabe, die die Schüler erledigen sollen. Sie stellen diese Aufgabe vor. Ihre Einführung sollte kurz sein, aber erklären, warum es wichtig ist, diese Aufgabe zu lösen. Geben Sie auf keinen Fall die Antwort auf die Frage an oder verraten Sie sie. Ihre Zielgruppe sind Universitätsstudenten. Bitte halten Sie den Text unter 1000 Zeichen. Beginnen Sie damit, mich zu fragen, was meine Aufgabe für die Studenten ist. Stellen Sie mir dann Fragen zu meinem Kontext, um einen möglichst guten Einstieg in die Diskussion zu finden. Wenn Sie das Gefühl haben, dass Sie alle notwendigen Informationen haben, denken Sie bei der Erstellung Ihres Textes Schritt für Schritt. 
