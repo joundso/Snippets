@@ -31,6 +31,9 @@
   - [Quarto](#quarto)
   - [Inspect a `data.table` or `data.frame` object](#inspect-a-datatable-or-dataframe-object)
   - [Special characters](#special-characters)
+  - [Split vector `x` in chunks](#split-vector-x-in-chunks)
+    - [... with maximum chunksize `max_size`](#-with-maximum-chunksize-max_size)
+    - [... of `n` equal-sized chunks](#-of-n-equal-sized-chunks)
 
 ## General
 
@@ -438,4 +441,20 @@ dt |> skimr::skim()
 
 ## Registered trademark (r):
 &#174;
+```
+
+## Split vector `x` in chunks
+
+([Source](https://stackoverflow.com/questions/3318333/split-a-vector-into-chunks))
+
+### ... with maximum chunksize `max_size`
+
+```r
+split(x, ceiling(seq_along(x)/max_size))
+```
+
+### ... of `n` equal-sized chunks
+
+```r
+split(x, cut(seq_along(x), n, labels = FALSE))
 ```
