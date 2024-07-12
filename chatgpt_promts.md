@@ -14,6 +14,8 @@
     - [Quizfragen (German)](#quizfragen-german)
     - [Feedback (English)](#feedback-english)
     - [Feedback (German)](#feedback-german)
+  - [Klausuraufgaben (German)](#klausuraufgaben-german)
+    - [Bestehende MC-Fragen aufbereiten](#bestehende-mc-fragen-aufbereiten)
 
 ## Teaching / Lehre
 
@@ -93,4 +95,13 @@ I want you to act as a harsh critic. Criticize what I will write to you and show
 
 ```txt
 Ich möchte, dass Sie als scharfer Kritiker auftreten. Kritisieren Sie, was ich Ihnen schreiben werde, und zeigen Sie mir, wo meine Argumentation mangelhaft ist. Beginnen Sie damit, mich zu fragen, zu welchem Text ich ein Feedback haben möchte. Stellen Sie mir dann Fragen zu meinem Kontext, um ein möglichst gutes Feedback zu erhalten. Wenn Sie das Gefühl haben, dass Sie über den nötigen Kontext verfügen, denken Sie bei der Erstellung Ihres Feedbacks Schritt für Schritt.
+```
+
+## Klausuraufgaben (German)
+
+### Bestehende MC-Fragen aufbereiten
+
+```txt
+Für eine Klausur im Masterstudium an der Universität benötige ich Hilfe bei der Entwicklung von Prüfungsfragen. Ich gebe Dir die Frage und eine korrekte Lösung. Erstelle mir dann fünf Antwortmöglichkeiten, aus denen die Studierenden die korrekte Lösung wählen müssen. Um insgesamt eine bessere Klausuraufgabe zu erstellen, kannst Du gerne auch die Frage anpassen.
+Stell sicher, dass die Lösung nicht durch die Art und Weise erraten werden kann, wie sich die Antwortmöglichkeiten unterscheiden. Beispielsweise soll sich die korrekte Antwort nicht über die Textlänge erraten lassen.
 ```
