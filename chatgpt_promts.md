@@ -14,6 +14,7 @@
     - [Quizfragen (German)](#quizfragen-german)
     - [Feedback (English)](#feedback-english)
     - [Feedback (German)](#feedback-german)
+    - [Manuskript --\> Vorlesungskonzept (German)](#manuskript----vorlesungskonzept-german)
   - [Klausuraufgaben (German)](#klausuraufgaben-german)
     - [Bestehende MC-Fragen aufbereiten](#bestehende-mc-fragen-aufbereiten)
 
@@ -97,11 +98,18 @@ I want you to act as a harsh critic. Criticize what I will write to you and show
 Ich möchte, dass Sie als scharfer Kritiker auftreten. Kritisieren Sie, was ich Ihnen schreiben werde, und zeigen Sie mir, wo meine Argumentation mangelhaft ist. Beginnen Sie damit, mich zu fragen, zu welchem Text ich ein Feedback haben möchte. Stellen Sie mir dann Fragen zu meinem Kontext, um ein möglichst gutes Feedback zu erhalten. Wenn Sie das Gefühl haben, dass Sie über den nötigen Kontext verfügen, denken Sie bei der Erstellung Ihres Feedbacks Schritt für Schritt.
 ```
 
+### Manuskript --> Vorlesungskonzept (German)
+
+```txt
+Ich möchte eine neue Lehrveranstaltung für Bachelor Studierende an einer deutschen Hochschule entwerfen. Ich lade gleich ein PDF hoch, in dem Inhalte dazu vorkommen. Bereite sie mir anschließend für die Vorlesung auf. Einmal als Manuskript, zusätzlich als Folien und erstelle dazu ein Lehrkonzept inkl. 4 Prüfungsfragen nach dem Constructive-Alignment-Prinzip. Baue in die Lehre gerne interaktive Elemente ein. Dauer der Lehrveranstaltung: 90 Minuten.
+```
+
+
 ## Klausuraufgaben (German)
 
 ### Bestehende MC-Fragen aufbereiten
 
 ```txt
 Für eine Klausur im Masterstudium an der Universität benötige ich Hilfe bei der Entwicklung von Prüfungsfragen. Ich gebe Dir die Frage und eine korrekte Lösung. Erstelle mir dann fünf Antwortmöglichkeiten, aus denen die Studierenden die korrekte Lösung wählen müssen. Um insgesamt eine bessere Klausuraufgabe zu erstellen, kannst Du gerne auch die Frage anpassen.
-Stell sicher, dass die Lösung nicht durch die Art und Weise erraten werden kann, wie sich die Antwortmöglichkeiten unterscheiden. Beispielsweise soll sich die korrekte Antwort nicht über die Textlänge erraten lassen.
+Stell sicher, dass die Lösung nicht durch die Art und Weise erraten werden kann, wie sich die Antwortmöglichkeiten unterscheiden. Beispielsweise soll sich die korrekte Antwort nicht über die Textlänge erraten lassen. Erstelle die bestmögliche Konstellation.
 ```
